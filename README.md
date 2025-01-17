@@ -1,53 +1,73 @@
-# PowerBI--Revolution-of-The-Commune-Budget.
-Revolution of The Commune Economy between 2007-2015, based on different dataset sources.
+# 📊 Power BI: Revolution of the Commune Budget (2007-2015)
 
-## POWER BI:
-Power BI est classé leader depuis plusieurs années consécutives dans le Magic Quadrant de Gartner.
-D’un point de vue fonctionnel, on peut classer l'outil Microsoft Power BI dans la catégorie de solutions de BI Self-Service et de Data Visualisation orientées utilisateurs métiers.
-En effet, l'outil permet à des utilisateurs non informaticiens de produire des rapports sans que cela nécessite de réelles compétences techniques.
-Power BI est utilisé dans notre projet comme outil de reporting. Le service Power BI a une version  gratuite et une version Pro. En effet, Power BI se compose d'une application de bureau Windows
-appelée Power BI Desktop, d'un service SaaS (Software as a Service) en ligne appelé service Power BI, ainsi que d'applications Power BI mobiles disponible sur téléphones et tablettes Windows mais
-aussi sur les appareils iOS et Android.
+This project analyzes the economic evolution of a commune between 2007 and 2015 using Power BI. It showcases the process of data extraction, transformation, modeling, and visualization to uncover key insights from various datasets.
 
-## CONNEXION AVEC POWER BI:
+## 📜 Project Overview
 
-![image](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/b20a334d-a51d-4761-a747-75f1dde28c0d)
-Une fois la connexion établie entre Power BI et notre  Base De Données, nous pouvons sélectionner les tableaux de base de données que nous souhaitons utiliser pour notre analyse. À l'aide de l'interface intuitive de Power BI, nous explorons les différentes tables disponibles dans la base de données connectée.
+This project demonstrates the use of Power BI to analyze and visualize the economic data of a commune, covering:
 
-## POWERQUERY:
+*   Data extraction and connection using Power BI.
+*   Data transformation and cleaning with Power Query.
+*   Data modeling through relationship management.
+*   Data analysis with DAX (Data Analysis Expressions) measures.
+*   Creation of interactive dashboards to display insights.
 
-Lorsque nous utilisons Power Query dans Power BI, nous avons la possibilité de vérifier les données de nos tableaux et d'effectuer les changements nécessaires. Une fois que nous avons établi la connexion avec notre source de données SQL Server, nous accédons à Power Query pour explorer les différentes tables disponibles.
-Grâce à Power Query, nous jouons un rôle actif dans la vérification et la modification des données de nos tableaux. En apportant les modifications nécessaires, nous nous assurons de travailler avec des données propres, précises et adaptées à nos besoins d'analyse ultérieure
-![image](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/7f9e1a73-93d8-4983-982d-1bce5a337a1a)
+## 🌟 Key Features
 
-## GESTION DES RELATIONS ENTRE LES TABLES:
+*   **Power BI Integration:** Connects to data sources using Power BI.
+*   **Power Query Transformation:** Cleans and transforms data with Power Query.
+*   **Relational Modeling:** Manages relationships between tables for analysis.
+*   **DAX Measures:** Creates custom measures for detailed analysis.
+*   **Interactive Dashboards:** Visualizes data using interactive dashboards.
 
-Une fois que nous avons terminé la transformation des données dans Power Query et que nous avons chargé les tables dans notre modèle, la prochaine étape consiste à gérer les relations entre les tables. Les relations permettent de lier les données des différentes tables en utilisant une colonne commune, dans notre cas l'année.
+## ⚙️ Data Analysis Pipeline
 
-![image](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/6903c468-a121-427f-9edf-d5351d5b96b7)
+1.  **Power BI Connection:**
+    *   Establishes a connection between Power BI and the SQL Server database.
+    *   Selects the database tables relevant for analysis.
+   ![Connection](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/b20a334d-a51d-4761-a747-75f1dde28c0d)
 
-Power Query s'occupe automatiquement de relier les données des tables en fonction des valeurs de la colonne Année. Cela nous permet d'effectuer des analyses croisées entre les tables, d'obtenir des agrégations basées sur les relations et de créer des visualisations qui intègrent les données de manière cohérente.
-La gestion des relations dans Power Query est essentielle pour obtenir des informations précises et cohérentes à partir de nos données. Elle nous permet d'explorer les relations entre les différentes dimensions et de naviguer facilement d'une table à une autre pour obtenir des analyses approfondies.
+2.  **Data Transformation with Power Query:**
+    *   Uses Power Query to explore, verify, and modify data from the connected tables.
+    *   Performs cleaning and transformations to ensure data is accurate and suitable for analysis.
+   ![Power Query](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/7f9e1a73-93d8-4983-982d-1bce5a337a1a)
+3.  **Relationship Management:**
+    *   Establishes relationships between tables using a common column, typically the "Year".
+     *   Uses the common column to link data across tables and create a cohesive dataset for analysis.
+   ![Relationship](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/6903c468-a121-427f-9edf-d5351d5b96b7)
 
+4.  **DAX Measure Creation:**
+    *   Utilizes DAX (Data Analysis Expressions) to create custom measures for advanced analysis.
+     *   Creates calculated columns using DAX for mathematical operations, text manipulations, and data conversions.
+   ![DAX](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/52377340-3ddb-44e3-9060-903579ef7c6b)
 
-## CREATION DES MESURES:
+5.  **Dashboard Creation:**
+    *   Creates interactive and visually appealing dashboards using Power BI visuals.
+    *   Presents insights and key findings regarding the economic evolution of the commune between 2007 and 2015.
 
-Une fois que les données sont connectées et les relations établies, nous pouvons passer à la création de nouvelles mesures.
-Le DAX (Data Analysis Expressions) est un langage de formule utilisé dans Power Query, Power Pivot et Power BI pour effectuer des calculs et des analyses avancées sur les données. Il est conçu spécifiquement pour les modèles de données tabulaires et permet d'effectuer des opérations telles que les agrégations, les calculs conditionnels, les calculs de pourcentage, les filtres et bien plus encore.
+## 📊 Insights & Results
 
-Dans Power Query, nous pouvons utiliser le DAX pour créer des colonnes calculées et des mesures personnalisées. Les colonnes calculées sont des colonnes virtuelles qui sont calculées à partir d'autres colonnes existantes dans notre table. Nous pouvons utiliser des fonctions DAX pour effectuer des opérations mathématiques, des concaténations, des extractions de texte, des conversions de données, etc.
-![image](https://github.com/Geocanda/PowerBI--Revolution-of-The-Commune-Budget./assets/72404281/52377340-3ddb-44e3-9060-903579ef7c6b)
+You can solicit the PowerBI dashboard file above for more details.
 
+## 🚀 Installation
 
-## REALISATION DES DASHBOARD:
-Une fois que nous avons vérifié et traité nos données dans la section précédente, nous entrons dans la phase passionnante de la réalisation des visuels dans Power BI. Cette étape est cruciale pour transformer nos données brutes en des présentations visuelles attrayantes et informatives. Les visuels dans Power BI nous permettent de communiquer efficacement les insights clés, de raconter une histoire avec nos données et de faciliter la prise de décisions éclairées.
-Chaque visualisation a un objectif spécifique et représente une facette importante de nos opérations et de nos performances. Nous explorerons chaque visualisation en détail, en expliquant son utilité, sa signification et son lien avec nos objectifs commerciaux.
-Les Dashboard décrit l’Evolution Economique de la Municipalité entre les années 2007-2015.
+To set up the project:
 
+1.  **Install Power BI Desktop:**
+    *   Download and install Power BI Desktop from the Microsoft website.
 
+2.  **Connect to Data Source:**
+    *   Set up a connection in Power BI to your SQL Server database.
+    *   Load and manage required tables to Power Query.
 
+3.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/KHAOULA-LAGHDAF/PowerBI--Revolution-of-The-Commune-Budget..git
+    cd PowerBI--Revolution-of-The-Commune-Budget.
+    ```
+    
+## ⚙️ Requirements
 
-
-
-
-
+*   **Software:**
+    *   Power BI Desktop (Free or Pro version)
+    *   SQL Server (or other database where data is stored)
